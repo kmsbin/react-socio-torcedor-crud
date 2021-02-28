@@ -78,4 +78,7 @@ tr:nth-child(1) th{
     display:flex;
     flex-direction:column ;
   }
+  .table {
+    font-size: 1.5vh;
+  }
 }
