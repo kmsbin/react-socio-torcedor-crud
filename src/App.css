@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@500;700&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*, html {
+  padding: 0%;
+  margin: none;
+  padding: 0%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background-color: #dde2e6;
   color: white;
+  font-family: Arial;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#root{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  display:flex;
+  justify-content: center;
+  color: #05031d;
+  font-size: 3vw;
+  align-items: center;
+  flex-direction:column ;
+  margin: none;
+  padding: 10px;
+  height: 80%;
+  font-family: 'Oxanium';  width: 60%;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.card-main{
+  height: 50%;
+  width: 60%;
+  justify-content: space-evenly;
+  display:flex;
+  flex-direction:column ;
+}
+.row-buttons {
+  justify-content: space-evenly;
+  display:flex;
 }
 
-.App-link {
-  color: #61dafb;
+.table {
+  height: 65%;
+  overflow-y: auto;
+  font-size: 1.5vw;
 }
+thead th { 
+  position: sticky; 
+  top: 0; 
+}
+tr:nth-child(1) th{ 
+  background: white; 
+  position: sticky; 
+  top: 0; 
+  z-index: 10; 
+}
+.card-table{
+  height: 85%;
+  width: 90%;
+}
+.toast {
+  font-size: 1vw;
+} 
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 600px) {
+  .main{
+    height: 90%;
+    width: 90%;
+    font-size: 3vh;
+    justify-content: space-evenly;
+    display:flex;
+    flex-direction:column ;
   }
 }

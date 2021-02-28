@@ -1,13 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Clube from './routes/Clube';
+import Socios from './routes/Socios';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import './App.css';
+import Associados from './routes/Associados';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact={true} component={Clube}/>
+        <Route path="/cadastrar-clube" exact={true} component={Clube}/>
+        <Route path="/cadastrar-socio" exact={true} component={Socios}/>
+        <Route path="/associados" exact={true} component={Associados}/>
+      </Switch>
+    
+    </BrowserRouter>,
+
   document.getElementById('root')
 );
 
