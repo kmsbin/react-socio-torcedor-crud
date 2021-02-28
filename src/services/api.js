@@ -1,12 +1,12 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "https://teste-dataclick.herokuapp.com/"
+    baseURL: "https://teste-dataclick-api.herokuapp.com/"
 });
 
 const getClubes = ()=>{
     const options = {
-        url: 'https://teste-dataclick.herokuapp.com/list-clubes',
+        url: 'https://teste-dataclick-api.herokuapp.com/list-clubes',
         method: 'GET',
         headers: {
           'Accept': 'application/json',
@@ -24,7 +24,7 @@ const getClubes = ()=>{
 
 const clubeRegister = (newClube)=>{
     const options = {
-        url: 'https://teste-dataclick.herokuapp.com/create-clube',
+        url: 'https://teste-dataclick-api.herokuapp.com/create-clube',
         method: 'POST',
         headers: {
           'Accept': 'application/json',
@@ -49,7 +49,7 @@ const clubeRegister = (newClube)=>{
 }
 const registeSocioClube = (clube, socio)=>{
     const options = {
-        url: 'https://teste-dataclick.herokuapp.com/create-usuario-clube',
+        url: 'https://teste-dataclick-api.herokuapp.com/create-usuario-clube',
         method: 'POST',
         headers: {
           'Accept': 'application/json',
@@ -77,7 +77,7 @@ const deleteSocioClube = (clube, socio)=>{
   console.log(`clube ${typeof clube} socio ${typeof socio}`)
 
   const options = {
-      url: 'https://teste-dataclick.herokuapp.com/delete-usuario-clube',
+      url: 'https://teste-dataclick-api.herokuapp.com/delete-usuario-clube',
       method: 'POST',
       headers: {
         'Accept': 'application/json',
@@ -98,7 +98,7 @@ const deleteSocioClube = (clube, socio)=>{
 
 const getAssociados = ()=>{
     const options = {
-        url: 'https://teste-dataclick.herokuapp.com/list-usuarios-clubes',
+        url: 'https://teste-dataclick-api.herokuapp.com/list-usuarios-clubes',
         method: 'GET',
         headers: {
           'Accept': 'application/json',
