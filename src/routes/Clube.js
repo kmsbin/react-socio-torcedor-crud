@@ -7,7 +7,7 @@ import toast from 'react-hot-toast';
 import CustomToast from '../components/Toast';
 // import styles from './App.css'; 
 
-export default function Clibe() {
+export default function Clube() {
     const [inputClube, setInputClube] = useState("");
     
 
@@ -20,7 +20,7 @@ export default function Clibe() {
                 {/* <div className='row-buttons'> */}
                 <Row>
                     
-                    <Col>
+                    <Col className="mt-3">
                             <Button  color="secondary" onClick={ ()=> {
                                 
                                 if(inputClube ==='') {
@@ -38,20 +38,20 @@ export default function Clibe() {
                                 Cadastrar 
                             </Button> 
                     </Col>
-                    <Col>
+                    <Col className="mt-3">
                         <Link to="/cadastrar-socio">
                             <Button color="secondary" >
                                 Socios
                             </Button> 
                         </Link>
                     </Col>
-                    <Link to='/associados'>
-                        <Col>
+                    <Col className="mt-3">
+                        <Link to='/associados'>
                             <Button color="secondary" s>
                                 Associados
                             </Button> 
-                        </Col>
-                    </Link>
+                        </Link>
+                    </Col>
                 </Row>
                <CustomToast />
                 {/* <Alert severity="success">This is a success message!</Alert> */}

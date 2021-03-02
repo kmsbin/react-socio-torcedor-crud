@@ -69,6 +69,20 @@ tr:nth-child(1) th{
   font-size: 1vw;
 } 
 
+.badge{
+  cursor: pointer;
+}
+.dialog-text{
+  color: #05031d;
+
+}
+.flex-dialog{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
 @media (max-width: 600px) {
   .main{
     height: 90%;
@@ -80,5 +94,8 @@ tr:nth-child(1) th{
   }
   .table {
     font-size: 1.5vh;
+  }
+  td, th {
+    font-size: 2.3vh;
   }
 }
